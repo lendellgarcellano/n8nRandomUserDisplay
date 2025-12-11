@@ -1,5 +1,5 @@
 // Replace with your actual n8n webhook URL
-const API_URL = "https://your-n8n-webhook-url/webhook/random-user";
+const API_URL = "https://lendell-garcellano.app.n8n.cloud/webhook-test/41763a4b-4787-42ec-ba1f-fddf221fc201";
 
 async function loadUser() {
   try {
