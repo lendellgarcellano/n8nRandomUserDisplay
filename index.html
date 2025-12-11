@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>n8n Random User Viewer</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Theme -->
+  <style>
+    body {
+      background: #0f1117;
+    }
+  </style>
+</head>
+<body class="text-gray-200">
+
+  <header class="p-6 border-b border-gray-800 bg-[#0f1117]">
+    <h1 class="text-3xl font-bold text-indigo-400">n8n Random User Viewer</h1>
+    <p class="text-gray-400 mt-1">A modern UI for displaying processed JSON from your workflow</p>
+  </header>
+
+  <main class="max-w-3xl mx-auto mt-10 p-6">
+    <div id="userCard" class="hidden bg-gray-900 rounded-2xl p-8 shadow-xl border border-gray-800"></div>
+
+    <div id="loading" class="text-center text-gray-400 mt-10 text-lg">
+      Fetching data...
+    </div>
+
+    <div id="error" class="hidden text-center text-red-400 mt-10 text-lg">
+      Unable to load data. Check your n8n workflow or API URL.
+    </div>
+
+  </main>
+
+  <script src="api.js"></script>
+</body>
+</html>
